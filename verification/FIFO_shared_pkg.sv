@@ -1,11 +1,11 @@
 package FIFO_shared_pkg;
 
   //test completed bit , when all the tests are completed the tb will raise this bit
-    int test_complteted = 0; 
+    int test_finished = 0; 
   //total number of successful tests
-    int sucess_count = 0;  
+    int correct_count = 0;  
   //total number of failed tests
-    int fail_count = 0;
+    int error_count = 0;
 
 
     //event that is triggered at the negative edge of the clock

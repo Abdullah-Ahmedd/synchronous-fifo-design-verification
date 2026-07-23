@@ -15,6 +15,7 @@ class FIFO_transaction;
 
 
 //inputs (randomzied)
+// bit clk; must be commented as clk must be known (cannot be random )
   rand logic [ FIFO_WIDTH - 1 : 0 ] data_in;
   rand logic wr_en;
   rand logic rd_en;

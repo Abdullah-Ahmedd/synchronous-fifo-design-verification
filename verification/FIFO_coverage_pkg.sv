@@ -1,6 +1,6 @@
 package FIFO_coverage_pkg;
 
-  import FIFO_transaction_pkg ::*
+  import FIFO_transaction_pkg::* ;
 class FIFO_coverage;
   //fifo_transaction object
   FIFO_transaction F_cvg_txn;
@@ -50,13 +50,19 @@ endgroup
 //                                           CONSTRUCTOR                                           //
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-function new ();
+function new();
   F_cvg_txn = new();
   cg_fifo = new();
 endfunction
 
 
 //SAMPLE FUNCTION
+function void sample_data (FIFO_transaction F_txn );
+
+  F_cvg_txn = F_txn;
+  cg_fifo.sample();
+
+endfunction
 
 
 endclass
